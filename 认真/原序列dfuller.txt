@@ -1,0 +1,109 @@
+. dfuller 宏观经济景气指数_先行指数
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -1.673            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.4452
+
+. dfuller 宏观经济景气指数_一致指数
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.921            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.7811
+
+. dfuller 活期存款利率
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -2.424            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.1351
+
+. dfuller CPI_当月同比
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -2.351            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.1561
+
+. dfuller 货币供应量_M2_同比
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -1.189            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.6782
+
+. dfuller 定期存款利率_1年整存整取
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -0.837            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.8082
+
+. dfuller 国房景气指数
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -1.346            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.6079
+
+. dfuller 沪深300收盘价
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             -1.308            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 0.6256
+
+. dfuller gdp循环趋势随机项
+
+Dickey-Fuller test for unit root                   Number of obs   =       191
+
+                               ---------- Interpolated Dickey-Fuller ---------
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+------------------------------------------------------------------------------
+ Z(t)             14.458            -3.480            -2.884            -2.574
+------------------------------------------------------------------------------
+MacKinnon approximate p-value for Z(t) = 1.0000
+
+. 

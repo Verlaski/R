@@ -1,0 +1,163 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP seaon.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Aug 2018, 08:48:56
+
+{com}. gen date2 = date( date , "YMD")
+
+. format date2 %td
+
+. br
+
+. tsset date2
+{res}{txt}{col 9}time variable:  {res}{col 25}date2, 31mar1992 to 31mar2018, but with gaps
+{txt}{col 17}delta:  {res}1 day
+
+{com}. save "D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP season.dta"
+{txt}file D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP season.dta saved
+
+{com}. #加法模型，回归法
+{err}Unknown #command
+
+{com}. tsline gdp
+{res}
+{com}. help dofq
+
+. help quarter
+
+. gen quarter = quarter(dofq(date2))
+
+. br
+
+. br
+
+. br
+
+. drop quarter, date2
+{err}options not allowed
+{txt}{search r(101), local:r(101);}
+
+{com}. drop quarter
+
+. drop date2
+
+. help date
+
+. help format
+
+. gen t = date(date, "YMD")
+
+. format t %tq
+
+. drop t
+
+. help format
+
+. help date
+
+. gen t = date(date, "YMD")
+
+. help date
+
+. import excel "D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP.xlsx", sheet("Sheet0") firstrow clear
+{res}
+{com}. rename date t
+{res}
+{com}. gen quarter = quarter((dofq(t)))
+
+. br
+
+. gen q = date(t, "DMY")
+{err}type mismatch
+{txt}{search r(109), local:r(109);}
+
+{com}. help date
+
+. drop quarter
+
+. gen q = quarter(t)
+
+. br
+
+. help dofq
+
+. rename q quarter
+{res}
+{com}. tab quarter, gen(q)
+
+    {txt}quarter {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}         27       25.71       25.71
+{txt}          2 {c |}{res}         26       24.76       50.48
+{txt}          3 {c |}{res}         26       24.76       75.24
+{txt}          4 {c |}{res}         26       24.76      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        105      100.00
+
+{com}. br
+
+. reg gdp q2 - q4
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       105
+{txt}{hline 13}{c +}{hline 34}   F(3, 101)       = {res}     0.27
+{txt}       Model {c |} {res} 3.3280e+09         3  1.1093e+09   {txt}Prob > F        ={res}    0.8456
+{txt}    Residual {c |} {res} 4.1216e+11       101  4.0808e+09   {txt}R-squared       ={res}    0.0080
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.0215
+{txt}       Total {c |} {res} 4.1549e+11       104  3.9951e+09   {txt}Root MSE        =   {res}  63881
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         gdp{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}q2 {c |}{col 14}{res}{space 2} 2463.316{col 26}{space 2} 17552.66{col 37}{space 1}    0.14{col 46}{space 3}0.889{col 54}{space 4}-32356.45{col 67}{space 3} 37283.08
+{txt}{space 10}q3 {c |}{col 14}{res}{space 2} 6751.035{col 26}{space 2} 17552.66{col 37}{space 1}    0.38{col 46}{space 3}0.701{col 54}{space 4}-28068.73{col 67}{space 3}  41570.8
+{txt}{space 10}q4 {c |}{col 14}{res}{space 2} 14806.57{col 26}{space 2} 17552.66{col 37}{space 1}    0.84{col 46}{space 3}0.401{col 54}{space 4} -20013.2{col 67}{space 3} 49626.33
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 66607.22{col 26}{space 2} 12293.96{col 37}{space 1}    5.42{col 46}{space 3}0.000{col 54}{space 4} 42219.31{col 67}{space 3} 90995.13
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. help predict
+
+. predict gdp_sa, r
+
+. r
+{err}command {bf}r{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. return(r)
+{err}invalid syntax
+{txt}{search r(198), local:r(198);}
+
+{com}. r(r)
+{err}command {bf}r{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. sum gdp
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}gdp {c |}{res}        105    72555.26    63206.83     5262.8   234582.2
+
+{com}. gen gdp_sa_reg = gdp_sa + r(mean)
+
+. tsline gdp_sa_reg gdp, lpattern("_")
+{err}time variable not set, use {bf:tsset varname ...}
+{txt}{search r(111), local:r(111);}
+
+{com}. tsset t
+{res}{txt}{col 9}time variable:  {res}{col 25}t, 31mar1992 to 31mar2018, but with gaps
+{txt}{col 17}delta:  {res}1 day
+
+{com}. tsline gdp_sa_reg gdp, lpattern("_")
+{res}
+{com}. save "D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP加法模型之回归法.dta"
+{txt}file D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP加法模型之回归法.dta saved
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP seaon.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 1 Aug 2018, 09:25:37
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

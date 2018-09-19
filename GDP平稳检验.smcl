@@ -1,0 +1,155 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\verla\Desktop\GDP平稳检验.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Jul 2018, 15:47:48
+
+{com}. gen date2 = date( 日期, "YMD")
+
+. formate date2 %td
+{err}command {bf}formate{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. format date2 %td
+
+. br
+
+. tsset date2
+{res}{txt}{col 9}time variable:  {res}{col 25}date2, 31dec1986 to 06jul2018, but with gaps
+{txt}{col 17}delta:  {res}1 day
+
+{com}. corrgram 上海证券交易所
+{txt}(note: time series has 739 gaps)
+
+{col 43}-1       0       1 -1       0       1
+ LAG       AC       PAC      Q     Prob>Q  [Autocorrelation]  [Partial Autocor]
+{hline 79}
+1     {res}{col 9} 0.7913{col 18} 0.9977{col 27} 2209.9{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}  {col 63}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} 
+{txt}2     {res}{col 9} 0.5852{col 18} 0.0402{col 27} 3418.7{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}        {c |}        
+{txt}3     {res}{col 9} 0.5691{col 18}-0.0274{col 27} 4562.4{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}        {c |}        
+{txt}4     {res}{col 9} 0.5636{col 18}-0.0667{col 27} 5684.2{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}        {c |}        
+{txt}5     {res}{col 9} 0.5657{col 18}      .{col 27} 6814.8{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}6     {res}{col 9} 0.7475{col 18}      .{col 27} 8789.5{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}7     {res}{col 9} 0.9235{col 18}      .{col 27}  11805{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} {col 63}
+{txt}8     {res}{col 9} 0.7404{col 18}      .{col 27}  13743{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}9     {res}{col 9} 0.5542{col 18}      .{col 27}  14829{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}10    {res}{col 9} 0.5436{col 18}      .{col 27}  15875{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}11    {res}{col 9} 0.5428{col 18}      .{col 27}  16918{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}12    {res}{col 9} 0.5514{col 18}      .{col 27}  17994{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}13    {res}{col 9} 0.7337{col 18}      .{col 27}  19900{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}14    {res}{col 9} 0.9117{col 18}      .{col 27}  22844{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} {col 63}
+{txt}15    {res}{col 9} 0.7314{col 18}      .{col 27}  24740{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}16    {res}{col 9} 0.5482{col 18}      .{col 27}  25805{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}17    {res}{col 9} 0.5391{col 18}      .{col 27}  26835{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}18    {res}{col 9} 0.5385{col 18}      .{col 27}  27863{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}19    {res}{col 9} 0.5471{col 18}      .{col 27}  28925{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}20    {res}{col 9} 0.7275{col 18}      .{col 27}  30803{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}21    {res}{col 9} 0.9034{col 18}      .{col 27}  33700{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} {col 63}
+{txt}22    {res}{col 9} 0.7251{col 18}      .{col 27}  35566{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}23    {res}{col 9} 0.5435{col 18}      .{col 27}  36615{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}24    {res}{col 9} 0.5343{col 18}      .{col 27}  37630{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}25    {res}{col 9} 0.5337{col 18}      .{col 27}  38642{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}26    {res}{col 9} 0.5398{col 18}      .{col 27}  39677{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}27    {res}{col 9} 0.7196{col 18}      .{col 27}  41518{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}28    {res}{col 9} 0.8946{col 18}      .{col 27}  44364{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} {col 63}
+{txt}29    {res}{col 9} 0.7178{col 18}      .{col 27}  46197{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}30    {res}{col 9} 0.5388{col 18}      .{col 27}  47230{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}31    {res}{col 9} 0.5296{col 18}      .{col 27}  48228{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}32    {res}{col 9} 0.5276{col 18}      .{col 27}  49219{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}33    {res}{col 9} 0.5350{col 18}      .{col 27}  50238{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}34    {res}{col 9} 0.7122{col 18}      .{col 27}  52045{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}35    {res}{col 9} 0.8860{col 18}      .{col 27}  54842{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1} {col 63}
+{txt}36    {res}{col 9} 0.7131{col 18}      .{col 27}  56655{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}   {col 63}
+{txt}37    {res}{col 9} 0.5367{col 18}      .{col 27}  57682{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}38    {res}{col 9} 0.5275{col 18}      .{col 27}  58674{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}39    {res}{col 9} 0.5250{col 18}      .{col 27}  59657{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+{txt}40    {res}{col 9} 0.5297{col 18}      .{col 27}  60659{col 36}0.0000{col 44}        {c LT}{hline 1}{hline 1}{hline 1}{hline 1}    {col 63}
+
+{com}. corrgram 国家统计局
+{txt}(note: time series has 104 gaps)
+
+{col 43}-1       0       1 -1       0       1
+ LAG       AC       PAC      Q     Prob>Q  [Autocorrelation]  [Partial Autocor]
+{hline 79}
+1     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}2     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}3     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}4     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}5     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}6     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}7     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}8     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}9     {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}10    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}11    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}12    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}13    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}14    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}15    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}16    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}17    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}18    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}19    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}20    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}21    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}22    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}23    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}24    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}25    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}26    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}27    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}28    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}29    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}30    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}31    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}32    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}33    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}34    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}35    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}36    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}37    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}38    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}39    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+{txt}40    {res}{col 9} 0.0000{col 18}      .{col 27}      0{col 36}1.0000{col 44}        {c |}        {col 63}
+
+{com}. br
+
+. br
+
+. graph 国家统计局
+{err}graph specification required
+{txt}{search r(198), local:r(198);}
+
+{com}. graph linear 国家统计局
+{err}{p 0 4 2}
+lineargraph_g.new  国家统计局: class member function not found
+{p_end}
+{txt}{search r(4023), local:r(4023);}
+
+{com}. graph bar 国家统计局
+{res}
+{com}. help graph
+
+. 国家统计局
+{err}command {bf}国家统计局{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. graph bar 国家统计局
+{res}
+{com}. graph bar 国家统计局
+{res}
+{com}. help graph
+
+. graph bar 国家统计局, over( date2)
+{res}
+{com}. help arima
+
+. log off
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\verla\Desktop\GDP平稳检验.smcl
+  {txt}log type:  {res}smcl
+ {txt}paused on:  {res}11 Jul 2018, 17:03:10
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

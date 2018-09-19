@@ -1,0 +1,223 @@
+{smcl}
+
+{txt}{net "from http://repec.org/bocode":SSC} Stata modules created or revised 2018-07-02 to 2018-08-02
+{hline}
+
+{net "describe http://repec.org/bocode/m/multishell":MULTISHELL}
+{txt} module to allot do files and variations of loops across parallel instances of Windows Stata and computers efficiently
+{txt} Authors: Jan Ditzen       Req: Stata version 14 for Windows
+{txt} Created: 2018-07-31
+
+{net "describe http://repec.org/bocode/c/cv2":CV2}
+{txt} module to calculate the coefficient of variation for variables
+{txt} Authors: Lorenz Graf-Vlachy       Req: Stata version 9
+{txt} Created: 2018-07-31
+
+{net "describe http://repec.org/bocode/f/fileutils":FILEUTILS}
+{txt} module for faster file navigation 
+{txt} Authors: Bill Rising       Req: Stata version 14.2
+{txt} Created: 2018-07-31
+
+{net "describe http://repec.org/bocode/e/excelclean":EXCELCLEAN}
+{txt} module to clean and integrate excel files
+{txt} Authors: Lu Han       Req: Stata version 14
+{txt} Created: 2018-07-31
+
+{net "describe http://repec.org/bocode/r/raschify":RASCHIFY}
+{txt} module to transform 1PL model estimates to Rasch metric
+{txt} Authors: Rafal Raciborski       Req: Stata version 14
+{txt} Created: 2018-07-31
+
+{net "describe http://repec.org/bocode/t/twostepweakiv":TWOSTEPWEAKIV}
+{txt} module to implement two-step weak-instrument-robust confidence sets for linear instrumental-variable (IV) models
+{txt} Authors: Liyang Sun       Req: Stata version 11.2 and avar, ivreg2 and moremata from SSC (q.v.)
+{txt} Created: 2018-07-21
+
+{net "describe http://repec.org/bocode/d/drm":DRM}
+{txt} module to fit Sobel's Diagonal Reference Model (DRM)
+{txt} Authors: Caspar Kaiser       Req: Stata version 12
+{txt} Created: 2018-07-21
+
+{net "describe http://repec.org/bocode/n/num2base26":NUM2BASE26}
+{txt} module to provide an interface to Mata's numtobase26() function
+{txt} Authors: Sven-Kristjan Bormann       Req: Stata version 13
+{txt} Created: 2018-07-21
+
+{net "describe http://repec.org/bocode/d/dtalink":DTALINK}
+{txt} module to implement probabilistic record linkage
+{txt} Authors: Keith Kranker       Req: Stata version 15.1
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/m/mtemore":MTEMORE}
+{txt} module to compute Marginal Treatment Effects (MTE) With a Binary Instrument
+{txt} Authors: Amanda Kowalski  Yen Tran  Ljubica Ristovska       Req: Stata version 13
+{txt} Created: 2018-07-19
+
+{net "describe http://repec.org/bocode/i/integrate_aq":INTEGRATE_AQ}
+{txt} module to do adaptive quadrature for integrals
+{txt} Authors: Adrian Mander       Req: Stata version 15
+{txt} Created: 2018-07-19
+
+{net "describe http://repec.org/bocode/i/itsarand":ITSARAND}
+{txt} module for conducting randomization tests for single-case and multiple-baseline AB phase designs 
+{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Created: 2018-07-19
+
+{net "describe http://repec.org/bocode/t/trackobs":TRACKOBS}
+{txt} module to keep a record of the number of observations in the current dataset.
+{txt} Authors: Daniel Klein       Req: Stata version 11.2
+{txt} Created: 2018-07-15
+
+{net "describe http://repec.org/bocode/m/medsurv":MEDSURV}
+{txt} module to calculate the median survival time after Cox/Poisson regression
+{txt} Authors:  Chao Wang       Req: Stata version 13.1
+{txt} Created: 2018-07-15
+
+{net "describe http://repec.org/bocode/s/sampsi_gehan":SAMPSI_GEHAN}
+{txt} module to give the parameters of the single stage Gehan design
+{txt} Authors: Adrian Mander       Req: Stata version 15 
+{txt} Revised: 2018-07-08
+
+{net "describe http://repec.org/bocode/s/summtab":SUMMTAB}
+{txt} module to compute summary statistics overall and/or across levels of a categorical variable 
+{txt} Authors: John A. Gallis       Req: Stata version 15
+{txt} Revised: 2018-07-15
+
+{net "describe http://repec.org/bocode/d/dag":DAG}
+{txt} module to provide utilities for directed acyclic graphs
+{txt} Authors: Chunsen Wu       Req: Stata version 13.1
+{txt} Revised: 2018-07-08
+
+{net "describe http://repec.org/bocode/p/putwrap":PUTWRAP}
+{txt} module to simplify creation of putdocx and putpdf documents
+{txt} Authors: Bill Rising       Req: Stata version 11.2
+{txt} Revised: 2018-08-01
+
+{net "describe http://repec.org/bocode/f/funnelperform":FUNNELPERFORM}
+{txt} module to produce funnel plot for institutional comparison
+{txt} Authors: Brent McSharry       Req: Stata version 9.1
+{txt} Revised: 2018-14-18
+
+{net "describe http://repec.org/bocode/s/sivreg":SIVREG}
+{txt} module to perform adaptive Lasso with some invalid instruments
+{txt} Authors: Helmut Farbmacher       Req: Stata version 10 and moremata from SSC (q.v.)
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/f/fcstats":FCSTATS}
+{txt} module to compute time series forecast accuracy statistics
+{txt} Authors: Christopher F Baum       Req: Stata version 13
+{txt} Revised: 2018-07-14
+
+{net "describe http://repec.org/bocode/g/getmstatistic":GETMSTATISTIC}
+{txt} module to Quantify Systematic Heterogeneity in Meta-Analysis
+{txt} Authors: Lerato Magosi       Req: Stata version 10
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/a/asreg":ASREG}
+{txt} module to estimate rolling window regressions. Fama-MacBeth and by(group) regressions
+{txt} Authors: Attaullah Shah       Req: Stata version 11
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/d/descgen":DESCGEN}
+{txt} module to add Stata dataset attribute variables to a xdir resultsset
+{txt} Authors: Roger Newson       Req: Stata version 10.0
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/m/mtebinary":MTEBINARY}
+{txt} module to compute Marginal Treatment Effects (MTE) With a Binary Instrument
+{txt} Authors: Amanda Kowalski  Yen Tran  Ljubica Ristovska       Req: Stata version 14
+{txt} Revised: 2018-07-19
+
+{net "describe http://repec.org/bocode/p/ppml_panel_sg":PPML_PANEL_SG}
+{txt} module to estimate "structural gravity" models via Poisson PML
+{txt} Authors:  Tom Zylkin       Req: Stata version 11.2, hdfe and reghdfe from SSC (q.v.)
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/c/classtabi":CLASSTABI}
+{txt} module for generating classification statistics and table using summarized data 
+{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2018-07-15
+
+{net "describe http://repec.org/bocode/b/boottest":BOOTTEST}
+{txt} module to provide fast execution of the wild bootstrap with null imposed
+{txt} Authors: David Roodman       Req: Stata version 11.2
+{txt} Revised: 2018-08-01
+
+{net "describe http://repec.org/bocode/x/xtfeis":XTFEIS}
+{txt} module to estimate linear Fixed-Effects model with Individual-specific Slopes (FEIS)
+{txt} Authors: Volker Ludwig       Req: Stata version 12
+{txt} Revised: 2018-07-19
+
+{net "describe http://repec.org/bocode/e/esetran":ESETRAN}
+{txt} module to transform estimates and standard errors in parmest resultssets
+{txt} Authors: Roger Newson       Req: Stata version 10
+{txt} Revised: 2018-08-01
+
+{net "describe http://repec.org/bocode/n/nysiis":NYSIIS}
+{txt} module to calculate nysiis codes from string variables
+{txt} Authors: Adrian Sayers       Req: Stata version 13.1 
+{txt} Revised: 2018-07-21
+
+{net "describe http://repec.org/bocode/i/ipdforest":IPDFOREST}
+{txt} module to produce forest plot for individual patient data IPD meta-analysis (one stage)
+{txt} Authors: Evangelos Kontopantelis  David Reeves       Req: Stata version 11.2
+{txt} Revised: 2018-08-01
+
+{net "describe http://repec.org/bocode/s/stnet":STNET}
+{txt} module to calculate net survival
+{txt} Authors: Enzo Coviello  Paul Dickman  Karri Seppa  Arun Pokhrel       Req: Stata version 11
+{txt} Revised: 2018-07-15
+
+{net "describe http://repec.org/bocode/m/makehlp":MAKEHLP}
+{txt} module to automatically create a help file
+{txt} Authors: Adrian Mander       Req: Stata version 12
+{txt} Revised: 2018-07-19
+
+{net "describe http://repec.org/bocode/i/integrate":INTEGRATE}
+{txt} module to perform one-dimensional integration
+{txt} Authors: Adrian Mander       Req: Stata version 12.1
+{txt} Revised: 2018-07-19
+
+{net "describe http://repec.org/bocode/s/stpm2":STPM2}
+{txt} module to estimate flexible parametric survival models
+{txt} Authors: Paul Lambert       Req: Stata version 11
+{txt} Revised: 2018-07-08
+
+{net "describe http://repec.org/bocode/d/diff":DIFF}
+{txt} module to perform Differences in Differences estimation
+{txt} Authors: Juan M. Villa       Req: Stata version 10.0
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/m/metaan":METAAN}
+{txt} module to perform fixed- or random-effects meta-analyses
+{txt} Authors: Evangelos Kontopantelis  David Reeves       Req: Stata version 9.2
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/s/scores":SCORES}
+{txt} module to creates scores (row-wise) of a set of variables allowing the specification of the number of valid values required and/or to produce various transformations of scores
+{txt} Authors: Dirk Enzmann       Req: Stata version 9.2
+{txt} Revised: 2018-07-21
+
+{net "describe http://repec.org/bocode/c/cmp":CMP}
+{txt} module to implement conditional (recursive) mixed process estimator
+{txt} Authors: David Roodman       Req: Stata version 11 and package ghk2 (q.v.)
+{txt} Revised: 2018-08-01
+
+{net "describe http://repec.org/bocode/r/radar":RADAR}
+{txt} module to draw radar (spider) plots
+{txt} Authors: Adrian Mander       Req: Stata version 11.0
+{txt} Revised: 2018-08-09
+
+{net "describe http://repec.org/bocode/g/gologit2":GOLOGIT2}
+{txt} module to estimate generalized logistic regression models for ordinal dependent variables
+{txt} Authors: Richard Williams       Req: Stata version 11.2
+{txt} Revised: 2018-07-31
+
+{net "describe http://repec.org/bocode/u/unique":UNIQUE}
+{txt} module to report number of unique values in variable(s)
+{txt} Authors: Tony Brady       Req: Stata version 10.1
+{txt} Revised: 2018-07-15
+
+{hline}
+{txt} End of recent additions and updates
+

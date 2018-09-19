@@ -1,0 +1,45 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP quarterly set.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Aug 2018, 14:12:30
+
+{com}. rename A date
+{res}
+{com}. rename B gdp
+{res}
+{com}. gen t = date(date, "YMD")
+
+. format t %td
+
+. help datetime
+
+. gen tq = qofd(t)
+
+. format tq %tq
+
+. tsset tq
+{res}{txt}{col 9}time variable:  {res}{col 25}tq, 1992q1 to 2018q2
+{txt}{col 17}delta:  {res}1 quarter
+
+{com}. db sax12
+
+. sax12 gdp, satype(single) inpref(gdp.spc) outpref(gdp) transfunc(none) regpre( const td1coef ) outauto( ao ls tc ) outlsrun(0) ammaxlag(2 1) ammaxdiff(2 1) ammaxlead(12) x11mode(add) x11seas(x11default)
+
+. db sax12im
+
+. sax12im, ext(d10 d11 d12 d13)
+{err}something required
+{txt}{search r(100), local:r(100);}
+
+{com}. db sax12
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP quarterly set.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Aug 2018, 14:17:32
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

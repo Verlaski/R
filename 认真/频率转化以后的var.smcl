@@ -1,0 +1,451 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}E:\MI_Verlaski\Drive\STUDY_1\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\认真\频率转化以后的var.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}17 Aug 2018, 21:06:56
+
+{com}. varsoc hs300 gggdp_d11 国房景气指数 定期存款利率_1年整存整取 货币供应量_M2_同比 CPI_当月同比 活期存款利率 停宏观经济景气指数_一致指数 停宏观经济景气指数_先行指数, maxlag(8)
+
+{txt}{col 4}Selection-order criteria
+{col 4}Sample:  {res}2002m9 - 2017m12, but with gaps{txt}{col 49}Number of obs {col 68}= {res}      112
+{col 3}{text}{c TLC}{hline 4}{c TT}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c TRC}
+{col 3}{text}{c |}lag{col 8}{c |}    LL  {col 18}   LR  {col 27}  df{col 32}   p  {col 39}   FPE {col 48}    AIC {col 58}   HQIC {col 68}   SBIC {col 79}{c |}
+{res}{col 3}{text}{c LT}{hline 4}{c +}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c RT}
+{col 3}{text}{c |}  0{col 8}{c |}{result}{space 1} -3247.3{col 18}{col 27}{col 32}{col 39} 1.4e+14{col 48}{space 1} 58.1481{col 58}{space 1} 58.2368{col 68}{space 1} 58.3666{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  1{col 8}{c |}{result}{space 1}-1594.53{col 18}{space 1} 3305.5{col 27}  81{col 32} 0.000{col 39} 94.0932{col 48}{space 1} 30.0809{col 58}{space 1} 30.9672{col 67}*{col 68}{space 1} 32.2654{col 77}*{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  2{col 8}{c |}{result}{space 1}-1478.33{col 18}{space 1} 232.39{col 27}  81{col 32} 0.000{col 39} 51.4845{col 47}*{col 48}{space 1} 29.4524{col 58}{space 1} 31.1364{col 68}{space 1} 33.6029{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  3{col 8}{c |}{result}{space 1}-1410.98{col 18}{space 1}  134.7{col 27}  81{col 32} 0.000{col 39} 70.2943{col 48}{space 1} 29.6962{col 58}{space 1} 32.1779{col 68}{space 1} 35.8128{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  4{col 8}{c |}{result}{space 1}   -1342{col 18}{space 1} 137.97{col 27}  81{col 32} 0.000{col 39}  99.631{col 48}{space 1} 29.9107{col 58}{space 1} 33.1901{col 68}{space 1} 37.9934{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  5{col 8}{c |}{result}{space 1}-1244.21{col 18}{space 1} 195.58{col 27}  81{col 32} 0.000{col 39}  93.093{col 48}{space 1} 29.6109{col 58}{space 1}  33.688{col 68}{space 1} 39.6596{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  6{col 8}{c |}{result}{space 1}-1158.36{col 18}{space 1} 171.71{col 27}  81{col 32} 0.000{col 39} 123.782{col 48}{space 1} 29.5242{col 58}{space 1}  34.399{col 68}{space 1}  41.539{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  7{col 8}{c |}{result}{space 1}-1040.89{col 18}{space 1} 234.93{col 27}  81{col 32} 0.000{col 39} 114.435{col 48}{space 1} 28.8731{col 58}{space 1} 34.5455{col 68}{space 1} 42.8539{col 79}{text}{c |}
+{res}{col 3}{text}{c |}  8{col 8}{c |}{result}{space 1}-894.713{col 18}{space 1} 292.36{col 26}*{col 27}  81{col 32} 0.000{col 39} 85.3932{col 48}{space 1} 27.7092{col 57}*{col 58}{space 1} 34.1793{col 68}{space 1} 43.6561{col 79}{text}{c |}
+{res}{col 3}{text}{c BLC}{hline 4}{c BT}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c BRC}
+{res}{txt}{space 3}Endogenous:  hs300 gggdp_d11 国房景气指数 定期存款利率_1年整存整取
+{space 16}货币供应量_M2_同比 CPI_当月同比 活期存款利率
+{space 16}停宏观经济景气指数_一致指数 停宏观经济景气指数_先行指数
+{space 3} Exogenous:  _cons
+
+{com}. var hs300 gggdp_d11 国房景气指数 定期存款利率_1年整存整取 货币供应量_M2_同比 CPI_当月同比 活期存款利率 停宏观经济景气指数_一致指数 停宏观经济景气指数_先行指数, lags(1/2)
+{res}
+{txt}Vector autoregression
+
+{col 1}Sample:  {res}2002m3 - 2017m12, but with gaps{txt}{col 49}Number of obs{col 67}= {res}       166
+{txt}Log likelihood =  {res}-2233.943{txt}{col 38}{col 49}AIC{col 67}=  {res} 28.97522
+{txt}FPE{col 16}=  {res} 31.29302{txt}{col 49}HQIC{col 67}=  {res} 30.27644
+{txt}Det(Sigma_ml){col 16}=  {res} 3.951463{txt}{col 49}SBIC{col 67}=  {res} 32.18094
+
+{col 1}{text}Equation        {col 18}  Parms{col 26}     RMSE {col 37}   R-sq  {col 47}   chi2   {col 58} P>chi2
+{res}{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 10}{hline 11}{hline 7}
+{col 1}{text}hs300           {col 18}{result}    19{col 26}{space 2} 214.963{col 37}{space 1} 0.9698{col 47} 5327.995{col 58} 0.0000
+{col 1}{text}gggdp_d11       {col 18}{result}    19{col 26}{space 2} 359.418{col 37}{space 1} 1.0000{col 47}  4836213{col 58} 0.0000
+{col 1}{text}国房景气指数    {col 18}{result}    19{col 26}{space 2} .567293{col 37}{space 1} 0.9825{col 47} 9338.343{col 58} 0.0000
+{col 1}{text}定期存款利率_~取{col 18}{result}    19{col 26}{space 2} .106019{col 37}{space 1} 0.9814{col 47} 8746.422{col 58} 0.0000
+{col 1}{text}货币供应量_M2~比{col 18}{result}    19{col 26}{space 2} .779365{col 37}{space 1} 0.9697{col 47} 5312.719{col 58} 0.0000
+{col 1}{text}CPI_当月同比    {col 18}{result}    19{col 26}{space 2} .510378{col 37}{space 1} 0.9495{col 47}   3121.2{col 58} 0.0000
+{col 1}{text}活期存款利率    {col 18}{result}    19{col 26}{space 2} .027993{col 37}{space 1} 0.9788{col 47} 7656.398{col 58} 0.0000
+{col 1}{text}停宏观经~致指数 {col 18}{result}    19{col 26}{space 2} .333366{col 37}{space 1} 0.9908{col 47} 17880.03{col 58} 0.0000
+{col 1}{text}停宏观经~行指数 {col 18}{result}    19{col 26}{space 2} .308965{col 37}{space 1} 0.9675{col 47} 4944.496{col 58} 0.0000
+{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 10}{hline 11}{hline 7}
+{res}
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      z{col 61}   P>|z|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}hs300                       {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.288666{col 41}{space 2} .0788886{col 52}{space 1}   16.34{col 61}{space 3}0.000{col 69}{space 4} 1.134048{col 82}{space 3} 1.443285
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.3297879{col 41}{space 2} .0829921{col 52}{space 1}   -3.97{col 61}{space 3}0.000{col 69}{space 4}-.4924494{col 82}{space 3}-.1671264
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0094552{col 41}{space 2} .0443051{col 52}{space 1}    0.21{col 61}{space 3}0.831{col 69}{space 4}-.0773812{col 82}{space 3} .0962915
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0075364{col 41}{space 2} .0445665{col 52}{space 1}   -0.17{col 61}{space 3}0.866{col 69}{space 4}-.0948851{col 82}{space 3} .0798123
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-27.62588{col 41}{space 2} 29.92255{col 52}{space 1}   -0.92{col 61}{space 3}0.356{col 69}{space 4}-86.27301{col 82}{space 3} 31.02124
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 16.65803{col 41}{space 2} 29.75314{col 52}{space 1}    0.56{col 61}{space 3}0.576{col 69}{space 4}-41.65706{col 82}{space 3} 74.97312
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 195.4296{col 41}{space 2}  187.049{col 52}{space 1}    1.04{col 61}{space 3}0.296{col 69}{space 4}-171.1798{col 82}{space 3} 562.0389
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-225.9218{col 41}{space 2}  190.979{col 52}{space 1}   -1.18{col 61}{space 3}0.237{col 69}{space 4}-600.2337{col 82}{space 3} 148.3901
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 8.528831{col 41}{space 2} 18.83242{col 52}{space 1}    0.45{col 61}{space 3}0.651{col 69}{space 4}-28.38203{col 82}{space 3} 45.43969
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-1.303817{col 41}{space 2} 18.78119{col 52}{space 1}   -0.07{col 61}{space 3}0.945{col 69}{space 4}-38.11428{col 82}{space 3} 35.50665
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 39.05109{col 41}{space 2} 31.94926{col 52}{space 1}    1.22{col 61}{space 3}0.222{col 69}{space 4} -23.5683{col 82}{space 3} 101.6705
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-53.44494{col 41}{space 2} 31.51837{col 52}{space 1}   -1.70{col 61}{space 3}0.090{col 69}{space 4}-115.2198{col 82}{space 3} 8.329943
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-509.4438{col 41}{space 2} 584.9468{col 52}{space 1}   -0.87{col 61}{space 3}0.384{col 69}{space 4}-1655.918{col 82}{space 3} 637.0309
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 925.3943{col 41}{space 2}  594.818{col 52}{space 1}    1.56{col 61}{space 3}0.120{col 69}{space 4}-240.4277{col 82}{space 3} 2091.216
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 32.93437{col 41}{space 2} 47.94734{col 52}{space 1}    0.69{col 61}{space 3}0.492{col 69}{space 4}-61.04069{col 82}{space 3} 126.9094
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} -23.3026{col 41}{space 2} 43.66999{col 52}{space 1}   -0.53{col 61}{space 3}0.594{col 69}{space 4}-108.8942{col 82}{space 3}   62.289
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 10.08748{col 41}{space 2} 52.60306{col 52}{space 1}    0.19{col 61}{space 3}0.848{col 69}{space 4}-93.01263{col 82}{space 3} 113.1876
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-10.86902{col 41}{space 2}  53.8421{col 52}{space 1}   -0.20{col 61}{space 3}0.840{col 69}{space 4}-116.3976{col 82}{space 3} 94.65956
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-90.04996{col 41}{space 2}   2058.5{col 52}{space 1}   -0.04{col 61}{space 3}0.965{col 69}{space 4}-4124.637{col 82}{space 3} 3944.537
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}gggdp_d11                   {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}  .187054{col 41}{space 2} .1319019{col 52}{space 1}    1.42{col 61}{space 3}0.156{col 69}{space 4}-.0714689{col 82}{space 3} .4455769
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.1532838{col 41}{space 2} .1387629{col 52}{space 1}   -1.10{col 61}{space 3}0.269{col 69}{space 4} -.425254{col 82}{space 3} .1186864
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.541588{col 41}{space 2} .0740782{col 52}{space 1}   20.81{col 61}{space 3}0.000{col 69}{space 4} 1.396398{col 82}{space 3} 1.686779
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} -.538983{col 41}{space 2} .0745152{col 52}{space 1}   -7.23{col 61}{space 3}0.000{col 69}{space 4}-.6850301{col 82}{space 3}-.3929358
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-51.66952{col 41}{space 2} 50.03055{col 52}{space 1}   -1.03{col 61}{space 3}0.302{col 69}{space 4}-149.7276{col 82}{space 3} 46.38856
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}   70.304{col 41}{space 2}  49.7473{col 52}{space 1}    1.41{col 61}{space 3}0.158{col 69}{space 4}-27.19892{col 82}{space 3} 167.8069
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-51.25698{col 41}{space 2} 312.7463{col 52}{space 1}   -0.16{col 61}{space 3}0.870{col 69}{space 4}-664.2284{col 82}{space 3} 561.7144
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 27.70467{col 41}{space 2} 319.3171{col 52}{space 1}    0.09{col 61}{space 3}0.931{col 69}{space 4}-598.1454{col 82}{space 3} 653.5547
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 24.62643{col 41}{space 2} 31.48783{col 52}{space 1}    0.78{col 61}{space 3}0.434{col 69}{space 4}-37.08858{col 82}{space 3} 86.34145
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}  -26.178{col 41}{space 2} 31.40219{col 52}{space 1}   -0.83{col 61}{space 3}0.404{col 69}{space 4}-87.72516{col 82}{space 3} 35.36915
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 65.74152{col 41}{space 2} 53.41921{col 52}{space 1}    1.23{col 61}{space 3}0.218{col 69}{space 4}-38.95821{col 82}{space 3} 170.4412
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-66.26649{col 41}{space 2} 52.69877{col 52}{space 1}   -1.26{col 61}{space 3}0.209{col 69}{space 4}-169.5542{col 82}{space 3} 37.02121
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-62.45641{col 41}{space 2} 978.0319{col 52}{space 1}   -0.06{col 61}{space 3}0.949{col 69}{space 4}-1979.364{col 82}{space 3} 1854.451
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} -386.993{col 41}{space 2} 994.5367{col 52}{space 1}   -0.39{col 61}{space 3}0.697{col 69}{space 4}-2336.249{col 82}{space 3} 1562.263
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} -20.0458{col 41}{space 2} 80.16803{col 52}{space 1}   -0.25{col 61}{space 3}0.803{col 69}{space 4}-177.1723{col 82}{space 3} 137.0807
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 25.95296{col 41}{space 2} 73.01629{col 52}{space 1}    0.36{col 61}{space 3}0.722{col 69}{space 4}-117.1563{col 82}{space 3} 169.0623
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 177.4697{col 41}{space 2}  87.9524{col 52}{space 1}    2.02{col 61}{space 3}0.044{col 69}{space 4} 5.086136{col 82}{space 3} 349.8532
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-144.1223{col 41}{space 2} 90.02407{col 52}{space 1}   -1.60{col 61}{space 3}0.109{col 69}{space 4}-320.5662{col 82}{space 3} 32.32164
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-5418.908{col 41}{space 2} 3441.816{col 52}{space 1}   -1.57{col 61}{space 3}0.115{col 69}{space 4}-12164.74{col 82}{space 3} 1326.927
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}国房景气指数                {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0002063{col 41}{space 2} .0002082{col 52}{space 1}    0.99{col 61}{space 3}0.322{col 69}{space 4}-.0002017{col 82}{space 3} .0006144
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0000823{col 41}{space 2}  .000219{col 52}{space 1}   -0.38{col 61}{space 3}0.707{col 69}{space 4}-.0005116{col 82}{space 3}  .000347
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0000924{col 41}{space 2} .0001169{col 52}{space 1}   -0.79{col 61}{space 3}0.430{col 69}{space 4}-.0003215{col 82}{space 3} .0001368
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .0000915{col 41}{space 2} .0001176{col 52}{space 1}    0.78{col 61}{space 3}0.436{col 69}{space 4} -.000139{col 82}{space 3}  .000322
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.024537{col 41}{space 2} .0789664{col 52}{space 1}   12.97{col 61}{space 3}0.000{col 69}{space 4} .8697655{col 82}{space 3} 1.179308
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0887718{col 41}{space 2} .0785193{col 52}{space 1}   -1.13{col 61}{space 3}0.258{col 69}{space 4}-.2426668{col 82}{space 3} .0651232
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .9694213{col 41}{space 2} .4936271{col 52}{space 1}    1.96{col 61}{space 3}0.050{col 69}{space 4}   .00193{col 82}{space 3} 1.936913
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-1.177248{col 41}{space 2} .5039983{col 52}{space 1}   -2.34{col 61}{space 3}0.020{col 69}{space 4}-2.165067{col 82}{space 3}-.1894299
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0067366{col 41}{space 2} .0496992{col 52}{space 1}   -0.14{col 61}{space 3}0.892{col 69}{space 4}-.1041453{col 82}{space 3} .0906721
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .0296672{col 41}{space 2}  .049564{col 52}{space 1}    0.60{col 61}{space 3}0.549{col 69}{space 4}-.0674765{col 82}{space 3}  .126811
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} -.043711{col 41}{space 2} .0843149{col 52}{space 1}   -0.52{col 61}{space 3}0.604{col 69}{space 4}-.2089651{col 82}{space 3} .1215432
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .0203117{col 41}{space 2} .0831778{col 52}{space 1}    0.24{col 61}{space 3}0.807{col 69}{space 4}-.1427138{col 82}{space 3} .1833371
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .3532618{col 41}{space 2} 1.543689{col 52}{space 1}    0.23{col 61}{space 3}0.819{col 69}{space 4}-2.672314{col 82}{space 3} 3.378837
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .5249071{col 41}{space 2}  1.56974{col 52}{space 1}    0.33{col 61}{space 3}0.738{col 69}{space 4}-2.551726{col 82}{space 3} 3.601541
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1005318{col 41}{space 2} .1265343{col 52}{space 1}    0.79{col 61}{space 3}0.427{col 69}{space 4}-.1474708{col 82}{space 3} .3485344
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.1540972{col 41}{space 2} .1152462{col 52}{space 1}   -1.34{col 61}{space 3}0.181{col 69}{space 4}-.3799756{col 82}{space 3} .0717812
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1907039{col 41}{space 2} .1388208{col 52}{space 1}    1.37{col 61}{space 3}0.170{col 69}{space 4}-.0813799{col 82}{space 3} .4627877
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0816855{col 41}{space 2} .1420907{col 52}{space 1}   -0.57{col 61}{space 3}0.565{col 69}{space 4}-.3601781{col 82}{space 3} .1968071
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2} .3317808{col 41}{space 2} 5.432435{col 52}{space 1}    0.06{col 61}{space 3}0.951{col 69}{space 4} -10.3156{col 82}{space 3} 10.97916
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}定期存款利率_1年整存整取    {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0000376{col 41}{space 2} .0000389{col 52}{space 1}    0.97{col 61}{space 3}0.334{col 69}{space 4}-.0000387{col 82}{space 3} .0001139
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0000335{col 41}{space 2} .0000409{col 52}{space 1}   -0.82{col 61}{space 3}0.413{col 69}{space 4}-.0001137{col 82}{space 3} .0000467
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.51e-06{col 41}{space 2} .0000219{col 52}{space 1}    0.07{col 61}{space 3}0.945{col 69}{space 4}-.0000413{col 82}{space 3} .0000443
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-2.07e-06{col 41}{space 2}  .000022{col 52}{space 1}   -0.09{col 61}{space 3}0.925{col 69}{space 4}-.0000452{col 82}{space 3}  .000041
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0087855{col 41}{space 2} .0147577{col 52}{space 1}    0.60{col 61}{space 3}0.552{col 69}{space 4}-.0201389{col 82}{space 3}   .03771
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0098201{col 41}{space 2} .0146741{col 52}{space 1}   -0.67{col 61}{space 3}0.503{col 69}{space 4}-.0385808{col 82}{space 3} .0189407
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.210776{col 41}{space 2} .0922516{col 52}{space 1}   13.12{col 61}{space 3}0.000{col 69}{space 4} 1.029966{col 82}{space 3} 1.391586
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.2662154{col 41}{space 2} .0941899{col 52}{space 1}   -2.83{col 61}{space 3}0.005{col 69}{space 4}-.4508242{col 82}{space 3}-.0816067
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0138981{col 41}{space 2} .0092881{col 52}{space 1}    1.50{col 61}{space 3}0.135{col 69}{space 4}-.0043062{col 82}{space 3} .0321023
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0243594{col 41}{space 2} .0092628{col 52}{space 1}   -2.63{col 61}{space 3}0.009{col 69}{space 4}-.0425141{col 82}{space 3}-.0062046
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0281394{col 41}{space 2} .0157572{col 52}{space 1}    1.79{col 61}{space 3}0.074{col 69}{space 4}-.0027442{col 82}{space 3} .0590229
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0118319{col 41}{space 2} .0155447{col 52}{space 1}   -0.76{col 61}{space 3}0.447{col 69}{space 4} -.042299{col 82}{space 3} .0186351
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.5844959{col 41}{space 2} .2884928{col 52}{space 1}   -2.03{col 61}{space 3}0.043{col 69}{space 4}-1.149931{col 82}{space 3}-.0190604
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .3273289{col 41}{space 2} .2933612{col 52}{space 1}    1.12{col 61}{space 3}0.265{col 69}{space 4}-.2476486{col 82}{space 3} .9023063
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0296593{col 41}{space 2} .0236474{col 52}{space 1}    1.25{col 61}{space 3}0.210{col 69}{space 4}-.0166887{col 82}{space 3} .0760073
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0178786{col 41}{space 2} .0215378{col 52}{space 1}   -0.83{col 61}{space 3}0.406{col 69}{space 4} -.060092{col 82}{space 3} .0243347
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0944179{col 41}{space 2} .0259436{col 52}{space 1}    3.64{col 61}{space 3}0.000{col 69}{space 4} .0435695{col 82}{space 3} .1452664
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0696433{col 41}{space 2} .0265546{col 52}{space 1}   -2.62{col 61}{space 3}0.009{col 69}{space 4}-.1216895{col 82}{space 3}-.0175971
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-3.117753{col 41}{space 2} 1.015242{col 52}{space 1}   -3.07{col 61}{space 3}0.002{col 69}{space 4}-5.107591{col 82}{space 3}-1.127916
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}货币供应量_M2_同比          {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0001868{col 41}{space 2}  .000286{col 52}{space 1}    0.65{col 61}{space 3}0.514{col 69}{space 4}-.0003738{col 82}{space 3} .0007474
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .0001278{col 41}{space 2} .0003009{col 52}{space 1}    0.42{col 61}{space 3}0.671{col 69}{space 4}-.0004619{col 82}{space 3} .0007176
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0000124{col 41}{space 2} .0001606{col 52}{space 1}   -0.08{col 61}{space 3}0.938{col 69}{space 4}-.0003273{col 82}{space 3} .0003024
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 7.23e-07{col 41}{space 2} .0001616{col 52}{space 1}    0.00{col 61}{space 3}0.996{col 69}{space 4} -.000316{col 82}{space 3} .0003174
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} -.257855{col 41}{space 2} .1084865{col 52}{space 1}   -2.38{col 61}{space 3}0.017{col 69}{space 4}-.4704847{col 82}{space 3}-.0452253
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .2244248{col 41}{space 2} .1078723{col 52}{space 1}    2.08{col 61}{space 3}0.037{col 69}{space 4} .0129989{col 82}{space 3} .4358507
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .3158836{col 41}{space 2} .6781608{col 52}{space 1}    0.47{col 61}{space 3}0.641{col 69}{space 4}-1.013287{col 82}{space 3} 1.645054
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.2548176{col 41}{space 2} .6924091{col 52}{space 1}   -0.37{col 61}{space 3}0.713{col 69}{space 4}-1.611915{col 82}{space 3} 1.102279
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .8002295{col 41}{space 2} .0682784{col 52}{space 1}   11.72{col 61}{space 3}0.000{col 69}{space 4} .6664063{col 82}{space 3} .9340527
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .1174098{col 41}{space 2} .0680927{col 52}{space 1}    1.72{col 61}{space 3}0.085{col 69}{space 4}-.0160494{col 82}{space 3}  .250869
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.2820945{col 41}{space 2} .1158345{col 52}{space 1}   -2.44{col 61}{space 3}0.015{col 69}{space 4} -.509126{col 82}{space 3} -.055063
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .1145516{col 41}{space 2} .1142723{col 52}{space 1}    1.00{col 61}{space 3}0.316{col 69}{space 4}-.1094181{col 82}{space 3} .3385212
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} -6.41308{col 41}{space 2}  2.12077{col 52}{space 1}   -3.02{col 61}{space 3}0.002{col 69}{space 4}-10.56971{col 82}{space 3}-2.256447
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 5.478642{col 41}{space 2} 2.156559{col 52}{space 1}    2.54{col 61}{space 3}0.011{col 69}{space 4} 1.251864{col 82}{space 3}  9.70542
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1614339{col 41}{space 2} .1738368{col 52}{space 1}    0.93{col 61}{space 3}0.353{col 69}{space 4}  -.17928{col 82}{space 3} .5021478
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.1154485{col 41}{space 2} .1583289{col 52}{space 1}   -0.73{col 61}{space 3}0.466{col 69}{space 4}-.4257675{col 82}{space 3} .1948706
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .5313102{col 41}{space 2} .1907165{col 52}{space 1}    2.79{col 61}{space 3}0.005{col 69}{space 4} .1575127{col 82}{space 3} .9051077
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.5887273{col 41}{space 2} .1952087{col 52}{space 1}   -3.02{col 61}{space 3}0.003{col 69}{space 4}-.9713293{col 82}{space 3}-.2061252
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2} 7.087284{col 41}{space 2} 7.463254{col 52}{space 1}    0.95{col 61}{space 3}0.342{col 69}{space 4}-7.540424{col 82}{space 3} 21.71499
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}CPI_当月同比                {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}  .000268{col 41}{space 2} .0001873{col 52}{space 1}    1.43{col 61}{space 3}0.153{col 69}{space 4}-.0000991{col 82}{space 3} .0006351
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0000493{col 41}{space 2}  .000197{col 52}{space 1}   -0.25{col 61}{space 3}0.803{col 69}{space 4}-.0004355{col 82}{space 3} .0003369
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0000434{col 41}{space 2} .0001052{col 52}{space 1}    0.41{col 61}{space 3}0.680{col 69}{space 4}-.0001628{col 82}{space 3} .0002496
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0000415{col 41}{space 2} .0001058{col 52}{space 1}   -0.39{col 61}{space 3}0.695{col 69}{space 4}-.0002488{col 82}{space 3} .0001659
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0252216{col 41}{space 2} .0710439{col 52}{space 1}   -0.36{col 61}{space 3}0.723{col 69}{space 4}-.1644651{col 82}{space 3} .1140219
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}  .043771{col 41}{space 2} .0706417{col 52}{space 1}    0.62{col 61}{space 3}0.536{col 69}{space 4}-.0946841{col 82}{space 3} .1822262
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0480813{col 41}{space 2} .4441029{col 52}{space 1}   -0.11{col 61}{space 3}0.914{col 69}{space 4} -.918507{col 82}{space 3} .8223444
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0155963{col 41}{space 2} .4534336{col 52}{space 1}   -0.03{col 61}{space 3}0.973{col 69}{space 4}-.9043099{col 82}{space 3} .8731172
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0026934{col 41}{space 2}  .044713{col 52}{space 1}   -0.06{col 61}{space 3}0.952{col 69}{space 4}-.0903293{col 82}{space 3} .0849426
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0065397{col 41}{space 2} .0445914{col 52}{space 1}   -0.15{col 61}{space 3}0.883{col 69}{space 4}-.0939373{col 82}{space 3} .0808579
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .8997859{col 41}{space 2} .0758558{col 52}{space 1}   11.86{col 61}{space 3}0.000{col 69}{space 4} .7511113{col 82}{space 3} 1.048461
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0919824{col 41}{space 2} .0748328{col 52}{space 1}   -1.23{col 61}{space 3}0.219{col 69}{space 4}-.2386519{col 82}{space 3} .0546872
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.778717{col 41}{space 2} 1.388815{col 52}{space 1}    1.28{col 61}{space 3}0.200{col 69}{space 4}-.9433107{col 82}{space 3} 4.500746
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-1.701866{col 41}{space 2} 1.412252{col 52}{space 1}   -1.21{col 61}{space 3}0.228{col 69}{space 4} -4.46983{col 82}{space 3} 1.066097
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}  .133707{col 41}{space 2} .1138394{col 52}{space 1}    1.17{col 61}{space 3}0.240{col 69}{space 4}-.0894142{col 82}{space 3} .3568282
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0083101{col 41}{space 2} .1036839{col 52}{space 1}   -0.08{col 61}{space 3}0.936{col 69}{space 4}-.2115267{col 82}{space 3} .1949066
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1389698{col 41}{space 2} .1248933{col 52}{space 1}    1.11{col 61}{space 3}0.266{col 69}{space 4}-.1058166{col 82}{space 3} .3837562
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.1454806{col 41}{space 2} .1278351{col 52}{space 1}   -1.14{col 61}{space 3}0.255{col 69}{space 4}-.3960328{col 82}{space 3} .1050717
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-13.64635{col 41}{space 2} 4.887414{col 52}{space 1}   -2.79{col 61}{space 3}0.005{col 69}{space 4}-23.22551{col 82}{space 3}-4.067198
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}活期存款利率                {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-2.07e-06{col 41}{space 2} .0000103{col 52}{space 1}   -0.20{col 61}{space 3}0.841{col 69}{space 4}-.0000222{col 82}{space 3} .0000181
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 4.61e-06{col 41}{space 2} .0000108{col 52}{space 1}    0.43{col 61}{space 3}0.669{col 69}{space 4}-.0000166{col 82}{space 3} .0000258
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.78e-06{col 41}{space 2} 5.77e-06{col 52}{space 1}    0.31{col 61}{space 3}0.758{col 69}{space 4}-9.53e-06{col 82}{space 3} .0000131
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-2.12e-06{col 41}{space 2} 5.80e-06{col 52}{space 1}   -0.37{col 61}{space 3}0.715{col 69}{space 4}-.0000135{col 82}{space 3} 9.25e-06
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0004352{col 41}{space 2} .0038966{col 52}{space 1}    0.11{col 61}{space 3}0.911{col 69}{space 4} -.007202{col 82}{space 3} .0080723
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0019845{col 41}{space 2} .0038745{col 52}{space 1}   -0.51{col 61}{space 3}0.609{col 69}{space 4}-.0095784{col 82}{space 3} .0056094
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0953832{col 41}{space 2} .0243579{col 52}{space 1}    3.92{col 61}{space 3}0.000{col 69}{space 4} .0476425{col 82}{space 3} .1431239
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.1095659{col 41}{space 2} .0248697{col 52}{space 1}   -4.41{col 61}{space 3}0.000{col 69}{space 4}-.1583096{col 82}{space 3}-.0608221
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0000802{col 41}{space 2} .0024524{col 52}{space 1}   -0.03{col 61}{space 3}0.974{col 69}{space 4}-.0048869{col 82}{space 3} .0047264
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} -.003232{col 41}{space 2} .0024457{col 52}{space 1}   -1.32{col 61}{space 3}0.186{col 69}{space 4}-.0080255{col 82}{space 3} .0015615
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0021357{col 41}{space 2} .0041605{col 52}{space 1}    0.51{col 61}{space 3}0.608{col 69}{space 4}-.0060187{col 82}{space 3} .0102902
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0001793{col 41}{space 2} .0041044{col 52}{space 1}   -0.04{col 61}{space 3}0.965{col 69}{space 4}-.0082237{col 82}{space 3} .0078652
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .6604282{col 41}{space 2} .0761731{col 52}{space 1}    8.67{col 61}{space 3}0.000{col 69}{space 4} .5111317{col 82}{space 3} .8097248
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .2346093{col 41}{space 2} .0774586{col 52}{space 1}    3.03{col 61}{space 3}0.002{col 69}{space 4} .0827933{col 82}{space 3} .3864253
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0036899{col 41}{space 2} .0062438{col 52}{space 1}    0.59{col 61}{space 3}0.555{col 69}{space 4}-.0085477{col 82}{space 3} .0159276
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0016107{col 41}{space 2} .0056868{col 52}{space 1}   -0.28{col 61}{space 3}0.777{col 69}{space 4}-.0127566{col 82}{space 3} .0095352
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0186547{col 41}{space 2} .0068501{col 52}{space 1}    2.72{col 61}{space 3}0.006{col 69}{space 4} .0052288{col 82}{space 3} .0320806
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0136705{col 41}{space 2} .0070114{col 52}{space 1}   -1.95{col 61}{space 3}0.051{col 69}{space 4}-.0274127{col 82}{space 3} .0000717
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-.3881498{col 41}{space 2} .2680626{col 52}{space 1}   -1.45{col 61}{space 3}0.148{col 69}{space 4}-.9135428{col 82}{space 3} .1372433
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}停宏观经济景气指数_一致指数 {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0002528{col 41}{space 2} .0001223{col 52}{space 1}    2.07{col 61}{space 3}0.039{col 69}{space 4} .0000131{col 82}{space 3} .0004926
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} -.000325{col 41}{space 2} .0001287{col 52}{space 1}   -2.53{col 61}{space 3}0.012{col 69}{space 4}-.0005773{col 82}{space 3}-.0000728
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-5.93e-06{col 41}{space 2} .0000687{col 52}{space 1}   -0.09{col 61}{space 3}0.931{col 69}{space 4}-.0001406{col 82}{space 3} .0001287
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-2.76e-06{col 41}{space 2} .0000691{col 52}{space 1}   -0.04{col 61}{space 3}0.968{col 69}{space 4}-.0001382{col 82}{space 3} .0001327
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0674026{col 41}{space 2} .0464041{col 52}{space 1}    1.45{col 61}{space 3}0.146{col 69}{space 4}-.0235477{col 82}{space 3} .1583529
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0824815{col 41}{space 2} .0461413{col 52}{space 1}   -1.79{col 61}{space 3}0.074{col 69}{space 4}-.1729168{col 82}{space 3} .0079539
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .2962353{col 41}{space 2} .2900767{col 52}{space 1}    1.02{col 61}{space 3}0.307{col 69}{space 4}-.2723045{col 82}{space 3} .8647751
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.2971695{col 41}{space 2} .2961712{col 52}{space 1}   -1.00{col 61}{space 3}0.316{col 69}{space 4}-.8776545{col 82}{space 3} .2833154
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0356078{col 41}{space 2} .0292054{col 52}{space 1}    1.22{col 61}{space 3}0.223{col 69}{space 4}-.0216338{col 82}{space 3} .0928493
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0540817{col 41}{space 2}  .029126{col 52}{space 1}   -1.86{col 61}{space 3}0.063{col 69}{space 4}-.1111675{col 82}{space 3} .0030042
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .2229424{col 41}{space 2} .0495471{col 52}{space 1}    4.50{col 61}{space 3}0.000{col 69}{space 4} .1258319{col 82}{space 3} .3200529
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0945394{col 41}{space 2} .0488789{col 52}{space 1}   -1.93{col 61}{space 3}0.053{col 69}{space 4}-.1903402{col 82}{space 3} .0012614
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1928242{col 41}{space 2} .9071387{col 52}{space 1}    0.21{col 61}{space 3}0.832{col 69}{space 4}-1.585135{col 82}{space 3} 1.970783
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-1.814674{col 41}{space 2} .9224471{col 52}{space 1}   -1.97{col 61}{space 3}0.049{col 69}{space 4}-3.622638{col 82}{space 3}-.0067113
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.188207{col 41}{space 2}  .074357{col 52}{space 1}   15.98{col 61}{space 3}0.000{col 69}{space 4}  1.04247{col 82}{space 3} 1.333944
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.3635334{col 41}{space 2} .0677237{col 52}{space 1}   -5.37{col 61}{space 3}0.000{col 69}{space 4}-.4962693{col 82}{space 3}-.2307975
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .1172951{col 41}{space 2} .0815771{col 52}{space 1}    1.44{col 61}{space 3}0.150{col 69}{space 4}-.0425931{col 82}{space 3} .2771833
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .1071156{col 41}{space 2} .0834986{col 52}{space 1}    1.28{col 61}{space 3}0.200{col 69}{space 4}-.0565387{col 82}{space 3} .2707699
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}-1.878117{col 41}{space 2} 3.192334{col 52}{space 1}   -0.59{col 61}{space 3}0.556{col 69}{space 4}-8.134976{col 82}{space 3} 4.378742
+{txt}{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}停宏观经济景气指数_先行指数 {txt}{c |}
+{space 22}hs300 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0000418{col 41}{space 2} .0001134{col 52}{space 1}    0.37{col 61}{space 3}0.712{col 69}{space 4}-.0001804{col 82}{space 3}  .000264
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-3.73e-06{col 41}{space 2} .0001193{col 52}{space 1}   -0.03{col 61}{space 3}0.975{col 69}{space 4}-.0002375{col 82}{space 3} .0002301
+{txt}{space 27} {c |}
+{space 18}gggdp_d11 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0000839{col 41}{space 2} .0000637{col 52}{space 1}    1.32{col 61}{space 3}0.188{col 69}{space 4}-.0000409{col 82}{space 3} .0002087
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0000865{col 41}{space 2} .0000641{col 52}{space 1}   -1.35{col 61}{space 3}0.177{col 69}{space 4} -.000212{col 82}{space 3} .0000391
+{txt}{space 27} {c |}
+{space 15}国房景气指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0568676{col 41}{space 2} .0430075{col 52}{space 1}    1.32{col 61}{space 3}0.186{col 69}{space 4}-.0274257{col 82}{space 3} .1411608
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0683956{col 41}{space 2} .0427641{col 52}{space 1}   -1.60{col 61}{space 3}0.110{col 69}{space 4}-.1522116{col 82}{space 3} .0154204
+{txt}{space 27} {c |}
+{space 3}定期存款利率_1年整存整取 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}  .274534{col 41}{space 2} .2688447{col 52}{space 1}    1.02{col 61}{space 3}0.307{col 69}{space 4}-.2523919{col 82}{space 3} .8014599
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.3595877{col 41}{space 2} .2744932{col 52}{space 1}   -1.31{col 61}{space 3}0.190{col 69}{space 4}-.8975845{col 82}{space 3}  .178409
+{txt}{space 27} {c |}
+{space 9}货币供应量_M2_同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} .0888853{col 41}{space 2} .0270677{col 52}{space 1}    3.28{col 61}{space 3}0.001{col 69}{space 4} .0358335{col 82}{space 3} .1419371
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.0777004{col 41}{space 2} .0269941{col 52}{space 1}   -2.88{col 61}{space 3}0.004{col 69}{space 4}-.1306079{col 82}{space 3}-.0247929
+{txt}{space 27} {c |}
+{space 15}CPI_当月同比 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0310887{col 41}{space 2} .0459205{col 52}{space 1}   -0.68{col 61}{space 3}0.498{col 69}{space 4}-.1210913{col 82}{space 3} .0589138
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} .0146466{col 41}{space 2} .0453012{col 52}{space 1}    0.32{col 61}{space 3}0.746{col 69}{space 4}-.0741421{col 82}{space 3} .1034354
+{txt}{space 27} {c |}
+{space 15}活期存款利率 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-1.462583{col 41}{space 2} .8407413{col 52}{space 1}   -1.74{col 61}{space 3}0.082{col 69}{space 4}-3.110406{col 82}{space 3} .1852396
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2} 1.406571{col 41}{space 2} .8549292{col 52}{space 1}    1.65{col 61}{space 3}0.100{col 69}{space 4}-.2690593{col 82}{space 3} 3.082202
+{txt}{space 27} {c |}
+停宏观经济景气指数_一致指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2}-.0590001{col 41}{space 2} .0689145{col 52}{space 1}   -0.86{col 61}{space 3}0.392{col 69}{space 4}-.1940701{col 82}{space 3} .0760698
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}  .060441{col 41}{space 2} .0627667{col 52}{space 1}    0.96{col 61}{space 3}0.336{col 69}{space 4}-.0625794{col 82}{space 3} .1834614
+{txt}{space 27} {c |}
+停宏观经济景气指数_先行指数 {c |}
+{space 24}L1. {c |}{col 29}{res}{space 2} 1.341995{col 41}{space 2} .0756061{col 52}{space 1}   17.75{col 61}{space 3}0.000{col 69}{space 4}  1.19381{col 82}{space 3} 1.490181
+{txt}{space 24}L2. {c |}{col 29}{res}{space 2}-.4232864{col 41}{space 2}  .077387{col 52}{space 1}   -5.47{col 61}{space 3}0.000{col 69}{space 4}-.5749621{col 82}{space 3}-.2716107
+{txt}{space 27} {c |}
+{space 22}_cons {c |}{col 29}{res}{space 2}  9.41182{col 41}{space 2} 2.958673{col 52}{space 1}    3.18{col 61}{space 3}0.001{col 69}{space 4} 3.612927{col 82}{space 3} 15.21071
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. varstable, grpah
+{err}{cmd:grpah} cannot be specified without {cmd:graph}
+{txt}{search r(198), local:r(198);}
+
+{com}. varstable, graph
+{res}
+{txt}{col 4}Eigenvalue stability condition
+{col 3}{text}{c TLC}{hline 26}{c TT}{hline 13}{c TRC}
+{col 3}{text}{c |}        Eigenvalue       {col 30}{c |}   Modulus  {col 44}{c |}
+{res}{col 3}{text}{c LT}{hline 26}{c +}{hline 13}{c RT}
+{col 3}{text}{c |}{result}{space 1}  1.006476{col 30}{text}{c |}{result}{space 2} 1.00648{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .9888751{col 30}{text}{c |}{result}{space 2} .988875{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .9386586{col 16}+   .131487{it:i}{col 30}{text}{c |}{result}{space 2} .947823{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .9386586{col 16}-   .131487{it:i}{col 30}{text}{c |}{result}{space 2} .947823{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .9371031{col 16}+ .06705919{it:i}{col 30}{text}{c |}{result}{space 2} .939499{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .9371031{col 16}- .06705919{it:i}{col 30}{text}{c |}{result}{space 2} .939499{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .8692452{col 30}{text}{c |}{result}{space 2} .869245{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .6915026{col 16}+ .04450705{it:i}{col 30}{text}{c |}{result}{space 2} .692933{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .6915026{col 16}- .04450705{it:i}{col 30}{text}{c |}{result}{space 2} .692933{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .6450672{col 16}+  .2167609{it:i}{col 30}{text}{c |}{result}{space 2} .680512{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .6450672{col 16}-  .2167609{it:i}{col 30}{text}{c |}{result}{space 2} .680512{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .3934976{col 16}+ .01769048{it:i}{col 30}{text}{c |}{result}{space 2} .393895{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .3934976{col 16}- .01769048{it:i}{col 30}{text}{c |}{result}{space 2} .393895{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1} -.3323414{col 30}{text}{c |}{result}{space 2} .332341{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .1055302{col 16}+  .1084391{it:i}{col 30}{text}{c |}{result}{space 2} .151313{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}  .1055302{col 16}-  .1084391{it:i}{col 30}{text}{c |}{result}{space 2} .151313{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1}   .137672{col 30}{text}{c |}{result}{space 2} .137672{col 44}{text}{c |}
+{res}{col 3}{text}{c |}{result}{space 1} -.1364324{col 30}{text}{c |}{result}{space 2} .136432{col 44}{text}{c |}
+{res}{col 3}{text}{c BLC}{hline 26}{c BT}{hline 13}{c BRC}
+{res}{txt}{col 4}At least one eigenvalue is at least 1.0.
+{col 4}VAR does not satisfy stability condition.
+{res}
+{com}. log
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}E:\MI_Verlaski\Drive\STUDY_1\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\认真\频率转化以后的var.smcl, on
+  {txt}log type:  {res}smcl
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}E:\MI_Verlaski\Drive\STUDY_1\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\认真\频率转化以后的var.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}17 Aug 2018, 21:08:38
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

@@ -1,0 +1,97 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP季节调整从头开始.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Aug 2018, 14:44:33
+
+{com}. import excel "C:\Users\verla\Desktop\data (5).xls", sheet("Sheet0")
+{res}
+{com}. rename A date
+{res}
+{com}. rename B gdp
+{res}
+{com}. gen t = date(date, "YMD")
+
+. format t %td
+
+. gen tq = qofd(t)
+
+. format tq %tq
+
+. br
+
+. tsset tq
+{res}{txt}{col 9}time variable:  {res}{col 25}tq, 1992q1 to 2018q2
+{txt}{col 17}delta:  {res}1 quarter
+
+{com}. db sax12
+
+. cd
+{res}D:\OneDrive - stu.xjtu.edu.cn\文档
+
+{com}. cd D:\GDPseasonal
+{res}D:\GDPseasonal
+
+{com}. db sax12
+
+. sax12 gdp, satype(single) inpref(gdp.spc) outpref(gdp) transfunc(none) regpre( const td ) outauto( ao ls tc ) outlsrun(0) ammaxlag(2 1) ammaxdiff(2 1) ammaxlead(12) x11mode(add) x11seas(x11default)
+
+. db sax12im
+
+. sax12im "D:\GDPseasonal\gdp.out", ext(d11)
+{res}{txt}Variable(s) ({res}gdp_d11{txt}) imported
+
+{com}. gen d_gdp = d.gdp_d11
+{txt}(1 missing value generated)
+
+{com}. tsline gdp gdp_d11 d_gdp
+{res}
+{com}. graph export "D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\Graph.png", as(png) replace
+{txt}(note: file D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\Graph.png not found)
+(file D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\Graph.png written in PNG format)
+
+{com}. dfuller gdp
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}      105
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}     0.276            -3.508            -2.890            -2.580
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.9762
+
+{com}. dfuller gdp_d11
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}      105
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    10.756            -3.508            -2.890            -2.580
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}1.0000
+
+{com}. dfuller d_gdp
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}      104
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -4.355            -3.509            -2.890            -2.580
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0004
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}D:\OneDrive - stu.xjtu.edu.cn\SurfaceStudy\科研训练\GDP季节调整从头开始.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Aug 2018, 14:48:03
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
